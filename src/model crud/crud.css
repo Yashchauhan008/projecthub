@@ -1,0 +1,41 @@
+.editcnt{
+    height: 70vh;
+    width: 30vw;
+    /* background-color: red; */
+
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    justify-content: start;
+    flex-direction: column;
+}
+.editform{
+    color: aqua;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.input1 {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    font-weight: 500;
+    font-size: .8vw;
+    color:black;
+    /* background-color: rgb(28,28,30); */
+    background-color: var(--color-2);
+    box-shadow: 0 0 .4vw rgba(0,0,0,0.5), 0 0 0 .15vw transparent;
+    border-radius: 0.4vw;
+    border: none;
+    outline: none;
+    padding: 0.4vw;
+    max-width: 190px;
+    transition: .4s;
+  }
+  
+  .input1:hover {
+    box-shadow: 0 0 0 .15vw rgba(135, 207, 235, 0.186);
+  }
+  
+  .input1:focus {
+    box-shadow: 0 0 0 .15vw skyblue;
+  }

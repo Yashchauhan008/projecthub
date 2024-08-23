@@ -1,5 +1,43 @@
+@font-face{
+  font-family: 'one';
+  src: url('../src/assets/main.ttf');
+}
+
+@font-face{
+font-family: 'two';
+src: url('../src/assets/Hikou\ Regular.otf');
+}
+@font-face{
+font-family: 'three';
+src: url('../src/assets/FlorisaPersonalUse-nRm84.otf');
+}
+@font-face{
+font-family: 'four';
+src: url('../src/assets/Batmeton-9Y5AB.ttf');
+}
+@font-face{
+font-family: 'five';
+src: url('../src/assets/ObviouslyDemo-Bold.otf');
+}
+:root{
+--bg-color:#F7E3CE;
+--color-1: #FFADAD;
+--color-2: #96F1C6;
+--color-3: #FFC48C;
+--color-4: #FFE375;
+--color-5: #B3F3FF;
+--text-color-1:#5F45F2;
+}
+
+
+
 body {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  overflow-x:hidden ;
+  /* overflow: hidden; */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +48,7 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+Link{
+  text-decoration: none;
 }

@@ -1,0 +1,240 @@
+.admin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* .search{
+    position: re;
+    top: -5vh;
+    width: 100%;
+} */
+
+.checkbox {
+    width: 223px;
+    height: 40px;
+    background-color: var(--color-2);
+    border-radius: 30px;
+    position: absolute;
+    top: 15.5vh;
+    /* right: 4vw; */
+    color: var(--text-color-1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #checkbox_toggle {
+    display: none;
+  }
+  
+  .checkbox .toggle {
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    border-radius: 30px;
+    left: 5px;
+    cursor: pointer;
+    background:var(--color-3);
+    transition: 0.4s;
+    /* box-shadow: 0px 0px 3px rgb(255, 255, 20), 0px 0px 5px rgb(255, 255, 20); */
+  }
+  
+  .checkbox .slide {
+    width: 230px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+  }
+  
+  .checkbox .slide .text {
+    font-size: 16px;
+    font-weight: 700;
+    z-index: 100;
+    cursor: pointer;
+    padding-bottom: 5px;
+  }
+  
+  .check:checked + .checkbox .slide .toggle {
+    transform: translateX(113px);
+    background: var(--color-3);
+    /* box-shadow: -0px -0px 10px #8983F7, -0px -0px 3px #8983F7; */
+  }
+  
+  .check:checked + .checkbox .slide {
+    background-color: var(--color-2);
+    color: var(--text-color-1);
+  }
+
+
+.crudcnt{
+    background-color: var(--color-1);
+    position: relative;
+    top: 22vh;
+    height: 75vh;
+    width: 94vw;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    overflow: hidden;
+    flex-wrap: wrap;
+    /* overflow-y: auto; */
+}
+
+.projcrud{
+    margin: 10px;
+    height: 80vh;
+    width: 92vw;
+    /* background-color: var(--color-3); */
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.projcard{
+    background-color: #fff;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: var(--color-2);
+}
+.projcard>img{
+    object-fit: cover;
+    height: 100px;
+    border-radius: 10px;
+}
+.crudlists{
+    /* background-color: red; */
+    top: 60px;
+    height: 70vh;
+    width: 90%;
+    overflow-y: auto;
+    border-radius: 20px;
+}
+.projdet{
+    overflow: hidden;
+    height: 10vh;
+    width: 50vw;
+    margin: 0 10px;
+    padding: 0 10px;
+    color: var(--text-color-1);
+}
+.projdet>h3{
+    position: relative;
+    top: -2vh;
+}
+.projdet>h4{
+    position: relative;
+    top: -4vh;
+}
+.crudbtns{
+    position: relative;
+    left: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* gap: -20vh; */
+    /* background-color: red; */
+    height: 50%;
+    width: 150px;
+    /* padding: -20px; */
+}
+.cbtn {
+    --color: var(--color-1);
+    font-family: inherit;
+    display: inline-block;
+    width: 5em;
+    height: 1.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color-3);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--text-color-1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+   }
+   
+   .cbtn:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color-3);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+   }
+   
+   .cbtn:hover {
+    color: var(--text-color-1);
+   }
+   
+   .cbtn:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+   }
+   
+   .cbtn:hover:before {
+    top: -30px;
+    left: -30px;
+   }
+   
+   .cbtn:active:before {
+    background: var(--color-1);
+    transition: background 0s;
+   }
+.cbtn:nth-child(1){
+    position: relative;
+    top: 1vh;
+}
+.cbtn:nth-child(2){
+    position: relative;
+    top: -1vh;
+    
+}
+.crudlists::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+.crudlists {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.projcrud>h2,
+.usercrud>h2{
+    position: relative;
+    top: 0vh;
+    /* background-color: var(--color-5); */
+    display: block;
+    font-family: five;
+    color: var(--text-color-1);
+    letter-spacing: 1px;
+}
+.usercrud{
+    margin: 10px;
+    height: 80vh;
+    width: 92vw;
+    /* background-color: var(--color-3); */
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

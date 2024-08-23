@@ -1,0 +1,17 @@
+.projectview {
+    height: 100vh;
+    width: 100%;
+    background-color: red;
+  }
+  
+  .project-view {
+    position: relative; /* Set to relative positioning */
+    height: 100%; /* Set the height to 100% of the parent container */
+  }
+  
+  .project-view > img {
+    position: absolute; /* Keep absolute positioning */
+    height: 10vh;
+    width: auto; /* Ensure the width is responsive */
+  }
+  

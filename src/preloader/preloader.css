@@ -1,0 +1,90 @@
+:root{
+  --bg-color:#F7E3CE;
+  --color-1: #FFADAD;
+  --color-2: #96F1C6;
+  --color-3: #FFC48C;
+  --color-4: #FFE375;
+  --color-5: #B3F3FF;
+  --text-color-1:#5F45F2;
+}
+
+
+.preloader1 {
+    position: fixed;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);;
+    border-radius: 50%; */
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-4); /* Change to your background color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+  .preloader2 {
+    position: fixed;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);;
+    border-radius: 50%; */
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-1); /* Change to your background color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+  .preloader3 {
+    position: fixed;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);;
+    border-radius: 50%; */
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-3); /* Change to your background color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+  .preloader4 {
+    position: fixed;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);;
+    border-radius: 50%; */
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-2); /* Change to your background color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+  .preloader5 {
+    position: fixed;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);;
+    border-radius: 50%; */
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-5); /* Change to your background color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+  #pretext{
+    color: var(--text-color-1);
+    font-size: 110vh;
+    transform: translateX(120vw);
+    white-space: nowrap;
+    font-family: one;
+    z-index: 10000;
+    font-weight: 1000;
+  }

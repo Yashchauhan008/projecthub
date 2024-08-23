@@ -1,0 +1,177 @@
+:root{
+    --bg-color:#F7E3CE;
+    --color-1: #FFADAD;
+    --color-2: #96F1C6;
+    --color-3: #FFC48C;
+    --color-4: #FFE375;
+    --color-5: #B3F3FF;
+    --text-color-1:#5F45F2;
+  }
+  
+  body {
+    box-sizing: border-box;
+    margin: 0;
+}
+.navbar {
+    position: fixed;
+    bottom: 5vh;
+    right: 5vw;
+    background-color: var(--color-5);
+    height: 80px;
+    width: 80px;
+    z-index: 9999;
+    border-radius: 30px;
+    transition: height 0.6s ease-in-out, width 0.6s ease-in-out;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.navbar:hover {
+    border-radius: 30px;
+    height: 80px;
+    width: 380px;
+    transition: height 0.6s ease-in-out, width 0.6s ease-in-out, border-radius 0.6s ease-in-out; 
+}
+.navmask {
+    transition: backdrop-filter 0.6s ease-in-out;
+    position: fixed;
+    z-index: 998;
+    bottom: 0;
+    right: 0;
+    height: 10%;
+    width: 10%;
+    opacity: 0;
+    backdrop-filter: none;
+    transition: opacity 0.6s ease-in-out, backdrop-filter 0.6s ease-in-out;
+}  
+.navmask.blurred {
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(10px);
+  }
+.navitems {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.item {
+    border-radius: 20px;
+    height: 60px;
+    width: auto;
+    padding: 0 10px;
+    background-color: var(--color-4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-color-1);
+    position: relative;
+    transition: background-color 0.3s ease-in-out;
+    color: var(--text-color-1);
+    font-family: four;
+    font-size: 150%;
+}
+
+.item:hover {
+    background-color: var(--color-3);
+}
+.item.selected {
+    background-color: var(--color-1);
+    /* color: var(--text-color-1); */
+  }
+  .navitems a:hover{
+    color: #433299;
+  }
+.navitems a:active,
+.navitems a:focus {
+  color: #291f5e; /* Use the color of the parent element */
+  outline: none; /* Remove the outline on focus (if present) */
+}
+.navitems a{
+    color: var(--text-color-1);
+}
+  
+
+.navprofile {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: var(--color-5);
+    height: 80px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navprofile > img {
+    height: 60%;
+    width: 60%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.itemcontent {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    position: absolute;
+    top: 15vh;
+    left: 10vw;
+    /* background-color: blue; */
+    height: 65vh;
+    width: 80%;
+    opacity: 0;
+    border-radius: 10vh;
+    transition: opacity 0.6s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+.content>img{
+    transform: scale(1.5);
+    object-fit: cover;
+}
+.content>h2{
+    position: absolute;
+    font-family: five;
+    font-size: 8vh;
+    top: 30%;
+    color: var(--text-color-1);
+}
+.content.active {
+    opacity: 1;
+}
+.itemcontent {
+    display: none;
+  }
+  
+  .display-block {
+    display: block;
+  }
+  
+  .display-none {
+    display: none;
+  }
+  /* .navitems>a>link{
+    text-decoration: none;
+  } */
+  .navitems a {
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  
